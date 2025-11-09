@@ -8,7 +8,7 @@
             "program": "${workspaceFolder}/src/main.py",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
-            "args": ["--mode", "scrape"],
+            //"args": ["--mode", "scrape"],
             //"args": ["--mode", "api"],
             "justMyCode": true
         }
