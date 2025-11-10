@@ -39,11 +39,8 @@ def make_session(
         >>> print(resp.status_code)
         200
     """
-
-    # Cria sessão persistente (reutilizável)
     session = requests.Session()
 
-    # Define política de retry com backoff exponencial
     retry = Retry(
         total=retries,
         read=retries,
@@ -53,12 +50,10 @@ def make_session(
         raise_on_status=False,
     )
 
-    # Adiciona adaptadores HTTP com suporte a retry
     adapter = HTTPAdapter(max_retries=retry)
     session.mount("https://", adapter)
     session.mount("http://", adapter)
 
-    # Define um cabeçalho User-Agent padrão (importante para evitar bloqueios)
     session.headers.update({
         "User-Agent": "Mozilla/5.0 (compatible; RPA-Test/1.0; +https://github.com/yourname)"
     })
