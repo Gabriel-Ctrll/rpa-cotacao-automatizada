@@ -1,0 +1,66 @@
+# --- Arquivos de cache do Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Ambiente virtual ---
+venv/
+env/
+.venv/
+.Python
+
+# --- Configurações de IDEs ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Arquivos temporários e logs ---
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# --- Compilações e distribuições ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Arquivos de testes ---
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+.cache/
+
+# --- Configurações locais ---
+.env
+.env.*
+*.local
+instance/
+.settings/
+
+# --- Dados de saída ---
+output/
+results/
+reports/
+data/
+
+# --- Arquivos de automação RPA ---
+*.xlsx
+*.csv
+*.json
+*.xml
+*.pdf
+*.zip
+*.tar.gz
+
+# --- Docker ---
+docker-compose.override.yml
+*.pid
+
+# --- Outros ---
+__init__.pyc
