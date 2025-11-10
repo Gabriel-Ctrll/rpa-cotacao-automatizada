@@ -43,11 +43,6 @@ htmlcov/
 instance/
 .settings/
 
-# --- Dados de saída ---
-output/
-results/
-reports/
-data/
 
 # --- Arquivos de automação RPA ---
 *.xlsx
